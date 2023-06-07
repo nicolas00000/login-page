@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="card flip  ">
+
+        <div class="card-front">
+            <h1>Log in</h1>
+            <div class="name-login">
+                <div class="password">
+                    <input type="password" id="password" placeholder="Username">
+                    <span class="icon-login">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                </div>
+                <br>
+                <div class="password">
+                    <input type="password" id="confirm-password" placeholder="Password">
+                    <span class="icon-login">
+                        <i class="fa-solid fa-lock"></i>
+                    </span>
+                </div>  
+            </div>
+
+            <br>
+
+            <div class="input-checked">
+                <div class="inputs-licence">
+                    <div class="lembreme">
+                        <input type="checkbox" class="checkbox"> 
+                        <span>
+                            lembre de mim
+                        </span> 
+                    </div>
+
+                    <div class="senha">
+                        <span class="click">
+                            Esqueci minha senha
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <button> LOGIN </button>
+
+
+            <div class="logins">
+                <h3>Ou entrar com </h3>
+                <div class="redes">
+                    <span  class="rede-login"><i class="fa-brands fa-google"></i> </span >
+                    
+                    <span  class="rede-login"> <i class="fa-brands fa-facebook-f"></i> </span >
+                    
+                    <span  class="rede-login"> <i class="fa-brands fa-github"></i> </span >
+                    
+                </div>
+            </div>
+            <br>
+            <div class="entrar"> 
+                <span style="color: #fafafaa1;" >Don't have an account?</span>
+                <span class="click singup" onclick="flip()" >
+                    Sing up
+                </span>
+            </div>
+        </div>
+
+        <div class="card-back">
+            <div>
+                <h1>Sing Up</h1>
+                <div class="name">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <br>
+
+                <div class="inputs-cadastro">
+                    <div class="name">
+                        <input type="email" id="confirm-password" placeholder="Email">
+                    </div>
+                    <br>
+                    <div class="name">
+                        <input type="password" id="confirm-password-cadastro" placeholder="Password">
+                        <span class="icon"> 
+                            <i class="fa-regular fa-eye-slash"></i>
+                        </span>
+                    </div>
+                    <br>
+                    <div class="name">
+                        <input type="password" id="confirm-password" placeholder="Confirm Password">
+                        <span class="icon">
+                            <i class="fa-regular fa-eye-slash"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <br>
+                
+                <div class="input-checked">
+                    <div class="inputs-licence">
+                        <input type="checkbox" class="checkbox"> 
+                        <div class="lembreme">
+                            <span>
+                                I Agree with
+                                <span class="click">
+                                    privacy
+                                </span>
+                                and 
+                                <span class="click">
+                                    politicy
+                                </span>
+                            </span> 
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <button> Sing up </button>
+            
+
+
+            <br>
+            <br>
+            <div class="entrar"> 
+                <span style="color: #fafafaa1;" >Already have an account? </span>
+                <span class="click singup" onclick="flip()" >
+                    Sing in
+                </span>
+            </div>
+        </div>
+        <br>
+
+
+
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/44fc8d9d55.js" crossorigin="anonymous"></script>
+</body>
+</html>
