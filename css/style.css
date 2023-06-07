@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222334;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 550px) {
+    .card {
+        height: 100% !important;
+        width: 100% !important;
+        padding: 0px !important;
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lembreme{
+        width: 120px !important;
+    }
+
+    button{
+        padding: 12px !important;
+    }
+
+    #password{
+        height: 40px;
+    }
+
+    .icon-login{
+        top: 11px !important;
+    }
+
+}
+
+.card{
+    background-color: #25273e ;
+    height: 440px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(16, 16, 59, 0.5);
+    padding: 20px; 
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.icon-login{
+    position: absolute;
+    top: 9px;
+    font-size: 11px;
+    left: 13px;
+}
+
+.material-symbols-outlined{
+    font-size: 10px;
+}
+
+
+/* ao clicar em cadastrar conta adicionar classe flip no card pai*/
+.flip {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.name-login{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-front, .card-back{
+    color: #fafafa;
+    margin: 0 auto;
+}
+input{
+    border-radius: 25px;
+    border: none;
+    height: 35px;
+    border: 1px solid #ef3957; 
+    background-color:rgba(16, 16, 59, 0.5) ;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    color: rgba(255, 255, 255, 0.746);
+    padding-left: 30px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.name>input{
+    width: 40%;
+}
+
+input::placeholder {
+    color:  #fafafa; 
+}
+
+
+#email,
+#confirm-passwor,
+#password{
+    width: 100%;
+}
+
+.password{
+    position: relative;
+    display: flex;
+}
+.password>input{
+    width: 100%;
+}
+.input-checked{
+    display: flex;
+    text-align: center;
+
+}
+
+.inputs-licence{
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs-licence>.lembreme{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.checkbox{
+    border: 1px solid ;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.icon{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+button{
+    width: 100%;
+    background-color: #ef3957;
+    border: none;
+    padding: 8px;
+    border-radius: 25px;
+    color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.logins{
+    text-align: center;
+    display: inline;
+}
+
+.redes{
+    width: 140px;
+    height: 40px;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.rede-login{
+    width: 30%;
+    background-color: #cf203d;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.click{
+    color: #ef3957;
+    cursor: pointer;
+}
+
+.inputs-cadastro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-cadastro>.name{
+    width: 100%;
+    position: relative;
+}
+
+.inputs-cadastro>.name>input{
+    width: 100%;
+}
+
+.inputs-cadastro>.name>.icon{
+    font-size: 13px;
+    top:8px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.card-back>div>.input-checked>.inputs-licence>.lembreme{
+    width: 100% !important;
+    justify-content: start;
+    margin-left: 10px;
+}
+
+.entrar{
+    text-align: center;
+    display: flex; 
+    justify-content: space-around;
+}
+
+.formas-login{
+    background-color: red;
+    position: relative;
+}
